@@ -1,0 +1,10 @@
+item.vorpaltek:adamant_block.name=Block of Adamant
+item.vorpaltek:adamant_ingot.name=Adamant Ingot
+item.vorpaltek:mithril_block.name=Block of Mithril
+item.vorpaltek:mithril_ingot.name=Mithril Ingot
+item.vorpaltek:orichalcum_block.name=Block of Orichalcum
+item.vorpaltek:orichalcum_ingot.name=Orichalcum Ingot
+item.vorpaltek:steel_block.name=Block of Steel
+item.vorpaltek:steel_ingot.name=Steel Ingot
+
+itemGroup.vorpaltek:core=VorpalTek Core

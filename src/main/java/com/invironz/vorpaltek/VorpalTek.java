@@ -4,7 +4,7 @@ import com.invironz.vorpaltek.core.VorpalTekCoreModule;
 import com.invironz.vorpaltek.factory.VorpalTekFactoryModule;
 import com.invironz.vorpaltek.farm.VorpalTekFarmModule;
 import com.invironz.vorpaltek.lib.IVorpalTekModule;
-import com.invironz.vorpaltek.lib.Names;
+import com.invironz.vorpaltek.lib.VorpalTekNames;
 import com.invironz.vorpaltek.power.VorpalTekPowerModule;
 import com.invironz.vorpaltek.proxy.CommonProxy;
 import com.invironz.vorpaltek.transport.VorpalTekTransportModule;
@@ -18,12 +18,12 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 /**
  * Created by charmquark on 1/9/2017.
  */
-@Mod(modid = Names.MOD_ID, name = Names.MOD_NAME, version = Names.VERSION, useMetadata = true)
+@Mod(modid = VorpalTekNames.MOD_ID, name = VorpalTekNames.MOD_NAME, version = VorpalTekNames.VERSION, useMetadata = true)
 public class VorpalTek {
-    @Mod.Instance(Names.MOD_ID)
+    @Mod.Instance(VorpalTekNames.MOD_ID)
     public static VorpalTek instance;
 
-    @SidedProxy(clientSide = Names.PROXY_CLIENT, serverSide = Names.PROXY_SERVER)
+    @SidedProxy(clientSide = VorpalTekNames.PROXY_CLIENT, serverSide = VorpalTekNames.PROXY_SERVER)
     public static CommonProxy proxy;
 
     private IVorpalTekModule[] modules = null;
