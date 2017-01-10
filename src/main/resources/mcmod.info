@@ -1,14 +1,14 @@
 [
 {
-  "modid": "examplemod",
-  "name": "Example Mod",
-  "description": "Example placeholder mod.",
+  "modid": "vorpaltek",
+  "name": "VorpalTek",
+  "description": "A vertical tech mod that strives to compliment Vanilla, not subjugate it.",
   "version": "${version}",
   "mcversion": "${mcversion}",
-  "url": "",
+  "url": "https://github.com/csauls/vorpal-tek",
   "updateUrl": "",
-  "authorList": ["ExampleDude"],
-  "credits": "The Forge and FML guys, for making this example",
+  "authorList": ["charmquark"],
+  "credits": "",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []
