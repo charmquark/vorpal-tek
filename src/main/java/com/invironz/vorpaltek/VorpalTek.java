@@ -6,9 +6,11 @@ import com.invironz.vorpaltek.farm.VorpalTekFarmModule;
 import com.invironz.vorpaltek.lib.IVorpalTekModule;
 import com.invironz.vorpaltek.lib.Names;
 import com.invironz.vorpaltek.power.VorpalTekPowerModule;
+import com.invironz.vorpaltek.proxy.CommonProxy;
 import com.invironz.vorpaltek.transport.VorpalTekTransportModule;
 import com.invironz.vorpaltek.workshop.VorpalTekWorkshopModule;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
@@ -21,21 +23,24 @@ public class VorpalTek {
     @Mod.Instance(Names.MOD_ID)
     public static VorpalTek instance;
 
+    @SidedProxy(clientSide = Names.PROXY_CLIENT, serverSide = Names.PROXY_SERVER)
+    public static CommonProxy proxy;
+
     private IVorpalTekModule[] modules = null;
 
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
-
+        proxy.init(event);
     }
 
     @Mod.EventHandler
     public void postInit(FMLPostInitializationEvent event) {
-
+        proxy.postInit(event);
     }
 
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
-
+        proxy.preInit(event);
     }
 
     public VorpalTekCoreModule getCoreModuleInstance() {

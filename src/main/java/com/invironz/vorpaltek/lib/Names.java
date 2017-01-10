@@ -11,4 +11,9 @@ public final class Names {
     public static final String VERSION  = "GRADLE:VERSION-" + BUILD;
 
     public static final String PREFIX = MOD_ID.toLowerCase() + ":";
+
+    public static final String PROXY_PKG = PKG + "proxy.";
+    public static final String PROXY_COMMON = PROXY_PKG + "CommonProxy";
+    public static final String PROXY_CLIENT = PROXY_PKG + "ClientProxy";
+    public static final String PROXY_SERVER = PROXY_COMMON;
 }
