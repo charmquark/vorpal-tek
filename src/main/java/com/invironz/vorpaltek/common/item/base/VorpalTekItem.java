@@ -10,30 +10,24 @@ import net.minecraft.item.ItemStack;
 /**
  * Created by charmquark on 1/9/2017.
  */
-public class VorpalTekItem extends Item {
-    private boolean shiny = false;
+public abstract class VorpalTekItem extends Item {
+    protected VorpalTekItem() {
+        super();
+    }
 
     public VorpalTekItem(String name) {
-        super();
+        this();
         setName(name);
+    }
+
+    public VorpalTekItem(CreativeTabs creativeTab) {
+        this();
+        setCreativeTab(creativeTab);
     }
 
     public VorpalTekItem(String name, CreativeTabs creativeTab) {
         this(name);
         setCreativeTab(creativeTab);
-    }
-
-    protected VorpalTekItem() {
-        super();
-    }
-
-    @Override
-    public boolean hasEffect(@NotNull ItemStack stack) {
-        if (shiny) {
-            return true;
-        } else {
-            return super.hasEffect(stack);
-        }
     }
 
     public void registerItemModel() {
@@ -43,9 +37,5 @@ public class VorpalTekItem extends Item {
     private void setName(String name) {
         setUnlocalizedName(VorpalTekNames.PREFIX + name);
         setRegistryName(name);
-    }
-
-    public void setShiny(boolean value) {
-        shiny = value;
     }
 }

@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "inventory": { "model": "vorpaltek:steel_block" },
+    "normal": { "model": "vorpaltek:steel_block" }
+  }
+}

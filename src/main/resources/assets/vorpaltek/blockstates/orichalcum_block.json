@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "inventory": { "model": "vorpaltek:orichalcum_block" },
+    "normal": { "model": "vorpaltek:orichalcum_block" }
+  }
+}
